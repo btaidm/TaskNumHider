@@ -9,7 +9,9 @@ class Plugin extends Base
 {
     public function initialize()
     {
-	    $this->template->setTemplateOverride('board/task_private','TaskNumHider:board/task_private');
+	    $this->template->setTemplateOverride('board/task_private','tasknumhider:board/task_private');
+	    $this->template->setTemplateOverride('task/dropdown','tasknumhider:task/dropdown');
+	    $this->template->setTemplateOverride('task_list/task_title','tasknumhider:task_list/task_title');
     }
 
     public function onStartup()

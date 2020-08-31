@@ -23,7 +23,7 @@
                     <?= $this->modal->large('edit', '', 'TaskModificationController', 'edit', array('task_id' => $task['id'], 'project_id' => $task['project_id'])) ?>
                 <?php endif ?>
             <?php else: ?>
-                <strong>T</strong>
+                <strong>Task</strong>
             <?php endif ?>
 
             <?php if (! empty($task['assignee_username'])): ?>
@@ -43,7 +43,7 @@
                         <?= $this->modal->large('edit', '', 'TaskModificationController', 'edit', array('task_id' => $task['id'], 'project_id' => $task['project_id'])) ?>
                     <?php endif ?>
                 <?php else: ?>
-                    <strong>T</strong>
+                    <strong>Task</strong>
                 <?php endif ?>
 
                 <?php if (! empty($task['owner_id'])): ?>
